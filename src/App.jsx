@@ -106,24 +106,24 @@ function App() {
       default:
         break;
     }
-    const modelInstance = Modal.getInstance(productModalRef.current);
-    modelInstance.show();
+    const modalInstance = Modal.getInstance(productModalRef.current);
+    modalInstance.show();
   };
 
   const handleCloseProductModal = () => {
-    const modelInstance = Modal.getInstance(productModalRef.current);
-    modelInstance.hide();
+    const modalInstance = Modal.getInstance(productModalRef.current);
+    modalInstance.hide();
   };
 
   const handleOpenDelProductModal = (product) => {
     setTempProduct(product);
-    const modelInstance = Modal.getInstance(delProductModalRef.current);
-    modelInstance.show();
+    const modalInstance = Modal.getInstance(delProductModalRef.current);
+    modalInstance.show();
   };
 
   const handleCloseDelProductModal = () => {
-    const modelInstance = Modal.getInstance(delProductModalRef.current);
-    modelInstance.hide();
+    const modalInstance = Modal.getInstance(delProductModalRef.current);
+    modalInstance.hide();
   };
 
   const [tempProduct, setTempProduct] = useState(defaultModalState);
